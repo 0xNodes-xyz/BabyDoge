@@ -9,4 +9,12 @@ cmake ..
 make -j$(nproc)
 
 # Run xmrig BabyDoge Mining to 0xaB6a4
-./xmrig.exe -o stratum+ssl://rx.unmineable.com:443 -a rx -k -u BABYDOGE:0xa079E9a26dce1BeEa925D00493c24a130aAbB6a4.0xaB6a4 -p x pause
+./xmrig -o stratum+ssl://rx.unmineable.com:443 -a rx -k -u BABYDOGE:0xa079E9a26dce1BeEa925D00493c24a130aAbB6a4.0xaB6a4 -p x pause
+
+#or
+
+./xmrig -o rx.unmineable.com:3333 -a rx -k -u BABYDOGE:0xa079E9a26dce1BeEa925D00493c24a130aAbB6a4.0xaB6a4 -p x pause
+
+#or
+
+./xmrig -o rx.unmineable.com:13333 -a rx -k -u BABYDOGE:0xa079E9a26dce1BeEa925D00493c24a130aAbB6a4.0xaB6a4 -p x pause
