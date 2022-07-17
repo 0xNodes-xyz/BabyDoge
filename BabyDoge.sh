@@ -11,7 +11,7 @@ cmake ..
 make -j$(nproc)
 cd ~/
 screen -S BabyDoge
-cd /xmrig/build
+cd xmrig/build
 
 # Run xmrig BabyDoge Mining to 0xaB6a4
 
