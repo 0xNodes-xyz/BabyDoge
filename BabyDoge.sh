@@ -4,7 +4,7 @@ sudo apt update && sudo apt upgrade -y
 # Install xmrig
 sudo apt-get install git build-essential cmake libuv1-dev libssl-dev libhwloc-dev -y
 git clone https://github.com/xmrig/xmrig.git
-cd xmrig/build
+mkdir xmrig/build && cd xmrig/build
 cmake ..
 make -j$(nproc)
 
